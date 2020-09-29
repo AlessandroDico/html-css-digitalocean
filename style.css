@@ -23,26 +23,7 @@ p {
 /* ______prima navbar_____ */
 
 .first-navbar {
-    height: 40px;
-}
-
-.first-navbar-left {
-    float: left;
-}
-
-.first-navbar-right {
-    float: right;
-    margin-right: 20px;
-}
-
-.icon-new {
-    display: inline-block;
-    background-color: #00d7d2;
-    color: #031b4f;
-    font-size: 10px;
-    padding: 3px 7px;
-    border-radius: 3px;
-    margin: 10px 10px 10px 20px;
+    display: none;
 }
 
 .first-navbar-left small {
@@ -72,50 +53,36 @@ ul.list-inline {
 }
 
 /* _____seconda navbar_____ */
+
 .navbar-default {
     background-color: #fff;
+    height: 65px;
 }
 
 .navbar-brand {
     padding: 0;
     height: auto;
 }
+
+.navbar > .container-fluid .navbar-brand {
+    margin: 17.5px 0 0 20px;
+}
+
 .navbar-brand > img {
     width: 175px;
 }
 
 .nav-left-list-items {
-    display: inline-block;
-    padding-left: 50px;
+    display: none;
 }
 
-.navbar-nav > li > a {
-    padding: 10px 10px;
+.navbar-right {
+    display: none;
 }
 
-.navbar-collapse a {
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: #031b4f;
-}
-
-.navbar-right > .btn-default {
-    color: #006aff;
-    border-color: #006aff;
-    padding: 8px 20px;
-}
-
-.navbar-right > .btn-primary {
-    padding: 8px 20px;
-}
-
-.fa-chevron-down {
-    padding-left: 2px;
-    vertical-align: middle;
+.navbar-header {
+    width: 100%;
+/* aggiunta per il toggle a larghezza fino 992*/
 }
 
 
@@ -133,4 +100,104 @@ ul.list-inline {
     h2 {
         font-size: 36px;
     }
+
+    .navbar > .container-fluid .navbar-brand {
+        margin: 17.5px 0 0 5px;
+        /* tolto margine negativo a questa classe */
+    }
+
+    .navbar-toggle {
+        display: block;
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-right: 15px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .navbar-header {
+        width: auto;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .first-navbar {
+        display: block;
+        height: 40px;
+    }
+
+    .first-navbar-left {
+        float: left;
+    }
+
+    .first-navbar-right {
+        float: right;
+        margin-right: 20px;
+    }
+
+    .icon-new {
+        display: inline-block;
+        background-color: #00d7d2;
+        color: #031b4f;
+        font-size: 10px;
+        padding: 3px 7px;
+        border-radius: 3px;
+        margin: 10px 10px 10px 20px;
+    }
+
+    .nav-left-list-items {
+        display: inline-block;
+        padding-left: 20px;
+        margin-top: 17.5px;
+    }
+
+    .navbar-nav > li > a {
+        padding: 5px;
+        margin: 0 5px;
+    }
+
+    .navbar-collapse a {
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #031b4f;
+    }
+
+    .navbar-right {
+        display: inline-block;
+        margin-top: 13.5px;
+    }
+
+    .navbar-right > .btn-default {
+        color: #006aff;
+        border-color: #006aff;
+        padding: 8px 20px;
+    }
+
+    .navbar-right > .btn-primary {
+        padding: 8px 20px;
+        margin-left: 10px;
+    }
+
+    .fa-chevron-down {
+        padding-left: 2px;
+        vertical-align: middle;
+    }
+
+
 }
