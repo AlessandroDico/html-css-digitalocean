@@ -14,6 +14,7 @@ p {
     font-size: 20px;
 }
 
+
 .btn-primary {
     background-color: #006aff;
     color: #fff;
@@ -85,8 +86,9 @@ ul.list-inline {
 /* aggiunta per il toggle a larghezza fino 992*/
 }
 
-
-
+.navbar-toggle {
+    margin-top: 15px;
+}
 
 
 
@@ -112,8 +114,7 @@ ul.list-inline {
         float: right;
         padding: 9px 10px;
         margin-right: 15px;
-        margin-top: 8px;
-        margin-bottom: 8px;
+        margin-top: 15px;
         background-color: transparent;
         background-image: none;
         border: 1px solid transparent;
@@ -187,6 +188,7 @@ ul.list-inline {
         color: #006aff;
         border-color: #006aff;
         padding: 8px 20px;
+        transition: all 0.3s ease-in;
     }
 
     .navbar-right > .btn-primary {
@@ -194,9 +196,32 @@ ul.list-inline {
         margin-left: 10px;
     }
 
+    .navbar-right > .btn-default:hover {
+        background-color: #006aff;
+        color: #fff;
+    }
+
+    .navbar-right > .btn-primary:hover {
+        background-color: #006aff;
+        color: #fff;
+        border-color: #006aff;
+    }
+
     .fa-chevron-down {
         padding-left: 2px;
         vertical-align: middle;
+    }
+
+    .first-navbar-left a:hover {
+        text-decoration: none;
+    }
+
+    .first-navbar-right ul li a:hover,
+    .first-navbar-left small:hover,
+    .first-navbar-left small:hover i,
+    .navbar-default .navbar-nav > li > a:hover {
+        text-decoration: none;
+        color: #006aff;
     }
 
 
