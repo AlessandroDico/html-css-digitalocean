@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 31px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.btn-primary {
+    background-color: #006aff;
+    color: #fff;
+    border-color: #006aff;
+}
+
+/* ______prima navbar_____ */
+
+.first-navbar {
+    height: 40px;
+}
+
+.first-navbar-left {
+    float: left;
+}
+
+.first-navbar-right {
+    float: right;
+    margin-right: 20px;
+}
+
+.icon-new {
+    display: inline-block;
+    background-color: #00d7d2;
+    color: #031b4f;
+    font-size: 10px;
+    padding: 3px 7px;
+    border-radius: 3px;
+    margin: 10px 10px 10px 20px;
+}
+
+.first-navbar-left small {
+    color: #5b6987;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.first-navbar-left .fa-chevron-right {
+    color: #5b6987;
+    font-size: 11px;
+}
+
+ul.list-inline {
+    margin: 0;
+}
+
+.first-navbar-right ul li {
+    margin-top: 5px;
+}
+
+.first-navbar-right ul li a {
+    display: block;
+    color: #5b6987;
+    padding: 5px;
+}
+
+/* _____seconda navbar_____ */
+.navbar-default {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    padding: 0;
+    height: auto;
+}
+.navbar-brand > img {
+    width: 175px;
+}
+
+.nav-left-list-items {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.navbar-nav > li > a {
+    padding: 10px 10px;
+}
+
+.navbar-collapse a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #031b4f;
+}
+
+.navbar-right > .btn-default {
+    color: #006aff;
+    border-color: #006aff;
+    padding: 8px 20px;
+}
+
+.navbar-right > .btn-primary {
+    padding: 8px 20px;
+}
+
+.fa-chevron-down {
+    padding-left: 2px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 58px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+}
