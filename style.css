@@ -137,6 +137,7 @@ ul.list-inline {
     .first-navbar {
         display: block;
         height: 40px;
+        border-bottom: 1px solid #e7e7e7;
     }
 
     .first-navbar-left {
@@ -156,6 +157,10 @@ ul.list-inline {
         padding: 3px 7px;
         border-radius: 3px;
         margin: 10px 10px 10px 20px;
+    }
+
+    .navbar-default {
+        margin-top: 40px;
     }
 
     .nav-left-list-items {
@@ -182,6 +187,7 @@ ul.list-inline {
     .navbar-right {
         display: inline-block;
         margin-top: 13.5px;
+        margin-right: 20px;
     }
 
     .navbar-right > .btn-default {
