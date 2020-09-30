@@ -105,7 +105,7 @@ p {
     padding: 20px 0 40px 0;
 }
 
-/* _____inizio form_______ */
+/* _____inizio form jumbotron_______ */
 
 .jumbo-form {
     width: 90%;
@@ -146,7 +146,7 @@ p {
     font-weight: 600;
 }
 
-/* ______bottoni form_______ */
+/* ______bottoni form jumbotron_______ */
 
 .btn-primary.btn-lg.btn-block {
     font-weight: 600;
@@ -204,7 +204,7 @@ p {
     color: #0069ff;
     border-color: #5b6886;
 }
- /* _____small fine form____ */
+ /* _____small fine form jumbotron____ */
 
 .jumbo-form-footer {
     display: inline-block;
@@ -340,6 +340,38 @@ p.description-paragraph {
 .built-for-business {
     padding: 60px 0;
 }
+
+
+.built-for-business-box > a {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding-top: 15px;
+    color: #0069ff;
+}
+
+.built-for-business-box > a::after {
+    content: '\f054';
+    font-family: "font awesome 5 free";
+    font-weight: bold;
+    vertical-align: middle;
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.built-for-business-box > a:hover {
+    text-decoration: none;
+    color: #1633ff;
+}
+
+.built-for-business-box {
+    padding: 35px 0;
+}
+
+
+
+
 
 
 /* _____@@@@@@ inizio media @@@@@@_____ */
