@@ -316,32 +316,6 @@ p.description-paragraph {
     max-width: 80%;
 }
 
-.designed-for-developers-image::before {
-    content: '\f30a';
-    font-family: "font awesome 5 free";
-    font-weight: bold;
-    color: #031b4e;
-    font-size: 40px;
-    position: absolute;
-    bottom: 50%;
-    left: 0;
-    transform: translateY(50%);
-    cursor: pointer;
-}
-
-.designed-for-developers-image::after {
-    content: '\f30b';
-    font-family: "font awesome 5 free";
-    font-weight: bold;
-    color: #031b4e;
-    font-size: 40px;
-    position: absolute;
-    bottom: 50%;
-    right: 0;
-    transform: translateY(50%);
-    cursor: pointer;
-}
-
 .carousel-descriprion {
     width: 60%;
     margin: auto;
@@ -448,6 +422,32 @@ p.description-paragraph {
         border-left: 2px solid #0069ff;
     }
 
+    /* ___freccie immagine carousel designed for developers */
+    .designed-for-developers-image::before {
+        content: '\f30a';
+        font-family: "font awesome 5 free";
+        font-weight: bold;
+        color: #031b4e;
+        font-size: 40px;
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        transform: translateY(50%);
+        cursor: pointer;
+    }
+
+    .designed-for-developers-image::after {
+        content: '\f30b';
+        font-family: "font awesome 5 free";
+        font-weight: bold;
+        color: #031b4e;
+        font-size: 40px;
+        position: absolute;
+        bottom: 50%;
+        right: 0;
+        transform: translateY(50%);
+        cursor: pointer;
+    }
 
 }
 
