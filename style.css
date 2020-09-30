@@ -15,6 +15,7 @@ h2 {
     font-size: 36px;
     color: #031b4e;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 h5 {
@@ -89,7 +90,7 @@ p {
     background-size: cover;
     background-position: center;
     margin-top: 64px;
-    padding: 150px 0;
+    padding: 50px 0;
 }
 
 .left-jumbo-container {
@@ -299,9 +300,72 @@ p.description-paragraph {
 }
 
 
+/* ______inizio sezione designed for developers______  */
+
+.designed-for-developers {
+    background-color: #f3f5f9;
+    padding: 60px 0;
+}
+
+.designed-for-developers-image {
+    margin-top: 40px;
+    position: relative;
+}
+
+.designed-for-developers-image img {
+    max-width: 80%;
+}
+
+.designed-for-developers-image::before {
+    content: '\f30a';
+    font-family: "font awesome 5 free";
+    font-weight: bold;
+    color: #031b4e;
+    font-size: 40px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+
+.designed-for-developers-image::after {
+    content: '\f30b';
+    font-family: "font awesome 5 free";
+    font-weight: bold;
+    color: #031b4e;
+    font-size: 40px;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+
+.carousel-descriprion {
+    width: 60%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.carousel-descriprion p {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.scroll-point-container i {
+    font-size: 10px;
+    color: #0069ff;
+    padding: 0 5px;
+    cursor: pointer;
+}
 
 
-/* _____inizio media_____ */
+
+
+
+/* _____@@@@@@ inizio media @@@@@@_____ */
 
 @media screen and (min-width: 420px) {
 
