@@ -95,7 +95,7 @@ p {
 /* _____inizio form_______ */
 
 .jumbo-form {
-    width: 370px;
+    width: 90%;
     margin: auto;
     background-color: #fff;
     border: 1px solid #555;
@@ -122,7 +122,7 @@ p {
 .jumbo-form-title {
     background-color: #f3f5f9;
     margin: 0;
-    padding: 15px;
+    padding: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -142,7 +142,7 @@ p {
 }
 
 .git-e-google-butons {
-    padding: 30px 20px;
+    padding: 15px 20px;
 }
 
 .git-e-google-butons > a > i.fab.fa-google {
@@ -161,11 +161,15 @@ p {
 }
 
 .button-google-icon {
-    width: calc(100% - 67.5px);
+    width: 100%;
+    font-size: 15px;
 }
 
 .button-git-icon {
-    margin-left: 10px;
+    display: block;
+    margin-top: 10px;
+    max-width: 50%;
+    margin: 10px auto;
 }
 
 .btn-primary.btn-lg.btn-block:hover {
@@ -203,6 +207,38 @@ p {
 
 
 /* _____inizio media_____ */
+
+@media screen and (min-width: 420px) {
+
+    .jumbo-form {
+        width: 370px;
+        margin: auto;
+    }
+
+
+    .jumbo-form-title {
+        padding: 15px;
+    }
+
+
+    .git-e-google-butons {
+        padding: 30px 20px;
+    }
+
+
+    .button-git-icon {
+        display: inline-block;
+        margin: 0;
+        margin-left: 10px;
+        max-width: auto;
+    }
+
+    .button-google-icon {
+        width: calc(100% - 67.5px);
+        font-size: 18px;
+    }
+
+}
 
 @media screen and (min-width: 768px) {
     h1 {
