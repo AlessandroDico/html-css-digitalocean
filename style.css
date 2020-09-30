@@ -335,8 +335,11 @@ p.description-paragraph {
     cursor: pointer;
 }
 
+/* _____inizio sezione built for business-___ */
 
-
+.built-for-business {
+    padding: 60px 0;
+}
 
 
 /* _____@@@@@@ inizio media @@@@@@_____ */
@@ -593,6 +596,11 @@ p.description-paragraph {
     }
 
     .jumbo-title, .jumbo-paragraph {
+        text-align: left;
+    }
+
+/* ___sezione buint for business___ */
+    .built-for-business-box {
         text-align: left;
     }
 
