@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 36px;
     color: #031b4e;
     font-weight: 600;
 }
@@ -270,8 +270,33 @@ p.description-paragraph {
     padding-bottom: 40px;
 }
 
+/*____inizio liste deploy-and-scale____ */
 
+.deploy-and-scale-bottom-left {
+    padding-bottom: 30px;
+}
 
+.deploy-and-scale-bottom-left > ul >li > a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #031b4e99;
+    padding: 10px;
+    border-bottom: 2px solid #aaa;
+}
+
+.deploy-and-scale-bottom-left > ul >li > a.current-section {
+    color: #031b4e;
+    border-bottom: 2px solid #0069ff;
+}
+
+.deploy-and-scale-bottom-left > ul >li > a:hover {
+    text-decoration: none;
+}
+
+.deploy-and-scale-bottom-left > ul >li > a:not(.current-section):hover {
+    color: #0069ff;
+}
 
 
 
@@ -308,6 +333,15 @@ p.description-paragraph {
         font-size: 18px;
     }
 
+    /*____inizio liste deploy-and-scale____ */
+    .deploy-and-scale-bottom-left ul {
+        display: inline-block;
+    }
+
+    .deploy-and-scale-bottom-left > ul >li {
+        float: left;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -330,6 +364,24 @@ p.description-paragraph {
 
     .deploy-and-scale-bottom-right {
         text-align: left;
+    }
+
+    /*____inizio liste deploy-and-scale____ */
+
+    .deploy-and-scale-bottom-left > ul >li {
+        float: none;
+    }
+
+    .deploy-and-scale-bottom-left > ul >li > a {
+        display: block;
+        padding: 15px 10px 15px 20px;
+        border-bottom: 0;
+        border-left: 2px solid #aaa;
+    }
+
+    .deploy-and-scale-bottom-left > ul >li > a.current-section {
+        border-bottom: 0;
+        border-left: 2px solid #0069ff;
     }
 
 
