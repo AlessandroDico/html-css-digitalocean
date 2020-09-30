@@ -1,9 +1,14 @@
+/* _____regole generiche____ */
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     font-size: 31px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.4px;
 }
 
 h2 {
@@ -14,6 +19,7 @@ p {
     font-size: 20px;
 }
 
+/* ______fine regole generiche_____ */
 
 .btn-primary {
     background-color: #006aff;
@@ -25,32 +31,6 @@ p {
 
 .first-navbar {
     display: none;
-}
-
-.first-navbar-left small {
-    color: #5b6987;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.first-navbar-left .fa-chevron-right {
-    color: #5b6987;
-    font-size: 11px;
-}
-
-ul.list-inline {
-    margin: 0;
-}
-
-.first-navbar-right ul li {
-    margin-top: 5px;
-}
-
-.first-navbar-right ul li a {
-    display: block;
-    color: #5b6987;
-    padding: 5px;
 }
 
 /* _____seconda navbar_____ */
@@ -90,9 +70,139 @@ ul.list-inline {
     margin-top: 15px;
 }
 
+/* _____inizio sezione jumbotron____ */
+.jumbo {
+    background-color: #0069ff;
+    background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 64px;
+    padding: 150px 0;
+}
+
+.left-jumbo-container {
+    padding-top: 70px;
+}
+
+.jumbo-paragraph > p {
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 0.4px;
+    line-height: 40px;
+    padding: 20px 0 40px 0;
+}
+
+/* _____inizio form_______ */
+
+.jumbo-form {
+    width: 370px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #555;
+    border-radius: 10px;
+}
+
+.jumbo-form > form {
+    padding: 20px;
+}
+
+.form-control {
+    height: 48px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    border-color: #0069ff;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.jumbo-form-title {
+    background-color: #f3f5f9;
+    margin: 0;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.jumbo-form-title h4 {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ______bottoni form_______ */
+
+.btn-primary.btn-lg.btn-block {
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    padding: 15px 16px;
+}
+
+.git-e-google-butons {
+    padding: 30px 20px;
+}
+
+.git-e-google-butons > a > i.fab.fa-google {
+    margin-right: 5px;
+}
+
+.button-google-icon, .button-git-icon {
+    display: inline-block;
+    font-size: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #0069ff;
+    border-radius: 6px;
+    padding: 12px 16px;
+    color: #0069ff;
+}
+
+.button-google-icon {
+    width: calc(100% - 67.5px);
+}
+
+.button-git-icon {
+    margin-left: 10px;
+}
+
+.btn-primary.btn-lg.btn-block:hover {
+    background-color: #1633ff;
+    transition: all 0.3s ease-in;
+}
+
+.button-google-icon:hover {
+    text-decoration: none;
+    color: #363636;
+    border-color: #5b6886;
+}
+
+.button-google-icon:hover i.fab.fa-google {
+    color: #0069ff;
+}
+
+.button-git-icon:hover {
+    color: #0069ff;
+    border-color: #5b6886;
+}
+ /* _____small fine form____ */
+
+.jumbo-form-footer {
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    padding-top: 15px;
+}
 
 
 
+
+
+
+
+/* _____inizio media_____ */
 
 @media screen and (min-width: 768px) {
     h1 {
@@ -110,15 +220,6 @@ ul.list-inline {
 
     .navbar-toggle {
         display: block;
-        position: relative;
-        float: right;
-        padding: 9px 10px;
-        margin-right: 15px;
-        margin-top: 15px;
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
     }
 
 
@@ -137,16 +238,44 @@ ul.list-inline {
     .first-navbar {
         display: block;
         height: 40px;
-        border-bottom: 1px solid #e7e7e7;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
     }
 
     .first-navbar-left {
         float: left;
     }
 
+    .first-navbar-left small {
+        color: #5b6987;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .first-navbar-left .fa-chevron-right {
+        color: #5b6987;
+        font-size: 11px;
+    }
+
+
     .first-navbar-right {
         float: right;
         margin-right: 20px;
+    }
+
+    ul.list-inline {
+        margin: 0;
+    }
+
+    .first-navbar-right ul li {
+        margin-top: 5px;
+    }
+
+    .first-navbar-right ul li a {
+        display: block;
+        color: #5b6987;
+        padding: 5px;
     }
 
     .icon-new {
@@ -159,6 +288,8 @@ ul.list-inline {
         margin: 10px 10px 10px 20px;
     }
 
+/* _______fine prima navbar___ */
+/* ______inizio seconda navbar_____ */
     .navbar-default {
         margin-top: 40px;
     }
@@ -170,8 +301,8 @@ ul.list-inline {
     }
 
     .navbar-nav > li > a {
-        padding: 5px;
-        margin: 0 5px;
+        padding: 4px;
+        margin: 0 4px;
     }
 
     .navbar-collapse a {
@@ -230,5 +361,13 @@ ul.list-inline {
         color: #006aff;
     }
 
+    .jumbo {
+        margin-top: 100px;
+        padding: 200px 0;
+    }
+
+    .jumbo-title, .jumbo-paragraph {
+        text-align: left;
+    }
 
 }
