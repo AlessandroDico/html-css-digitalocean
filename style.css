@@ -369,7 +369,37 @@ p.description-paragraph {
     padding: 35px 0;
 }
 
+/* _____inizio sezione customers_____ */
 
+.customers {
+    background-color: #031b4e;
+    background-image: url('https://prismic-io.s3.amazonaws.com/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg');
+    padding: 60px 0;
+}
+
+.customers-title, .customers-paragraph {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.customers-title h2 {
+    letter-spacing: 1.5px;
+}
+
+.customers-title h2, .customers-paragraph p {
+    color: #fff;
+    line-height: 1.5;
+}
+
+.customers-paragraph > p > a {
+    color: #0069ff;
+}
+
+.customers-paragraph > p > a:hover {
+    text-decoration: none;
+    color: #1633ff;
+}
 
 
 
@@ -484,6 +514,11 @@ p.description-paragraph {
         cursor: pointer;
     }
 
+    /* ___inizio sezione customers___ */
+
+    .customers-title, .customers-paragraph {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -634,6 +669,12 @@ p.description-paragraph {
 /* ___sezione buint for business___ */
     .built-for-business-box {
         text-align: left;
+    }
+
+    /* ___inizio sezione customers___ */
+
+    .customers-title, .customers-paragraph {
+        width: 70%;
     }
 
 }
