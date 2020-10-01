@@ -519,6 +519,45 @@ h2.prefooter-title {
     margin-top: 8.5px;
 }
 
+/* ______inizio footer_________ */
+
+footer {
+    height: 800px;
+    background-color: #010e28;
+    padding: 60px 0;
+}
+
+.footer-all-lists-container {
+    /* padding: 0 30px; sotto     */
+}
+
+.footer-single-ul-container {
+    float: left;
+    width: 20%;  /*sotto **/
+}
+
+span.footer-list-title {
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+ul.footer-ul > li > a {
+    display: inline-block;
+    color: #ffffff80;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
