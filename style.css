@@ -374,7 +374,7 @@ p.description-paragraph {
 .customers {
     background-color: #031b4e;
     background-image: url('https://prismic-io.s3.amazonaws.com/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg');
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .customers-title, .customers-paragraph {
@@ -409,6 +409,11 @@ p.description-paragraph {
     letter-spacing: 1.2px;
 }
 
+.data-row a:hover {
+    text-decoration: none;
+    color: #0069ff;
+}
+
 .data-row a::after {
     content: '\f054';
     font-family: "font awesome 5 free";
@@ -419,14 +424,11 @@ p.description-paragraph {
 }
 
 .data-row {
-    border-bottom: 1px solid #fff;
-    margin: 0 5px;
+    border-bottom: 1px solid #ffffff29;
     padding: 10px 0 10px 0;
+    margin: auto;
+    max-width: 80%;
 }
-
-/* :last-child.data-row {
-    border-bottom: 0;
-} */
 
 .customer-code, .customer-location {
     color: #fff;
@@ -439,8 +441,9 @@ p.description-paragraph {
     opacity: 0.6;
 }
 
-
-
+.col-xs-12.col-md-6:last-child .data-row {
+    border-color: transparent;
+}
 
 
 /* _____@@@@@@ inizio media @@@@@@_____ */
@@ -565,6 +568,13 @@ p.description-paragraph {
     .customers-title, .customers-paragraph {
         width: 80%;
     }
+
+    /* test speed tabel sezione customers */
+
+    .data-row {
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -721,6 +731,13 @@ p.description-paragraph {
 
     .customers-title, .customers-paragraph {
         width: 70%;
+    }
+
+    /* __________customers data "tabel"______ */
+
+    .col-xs-12.col-md-6:last-child .data-row,
+    .col-xs-12.col-md-6:nth-last-child(2) .data-row  {
+        border-color: transparent;
     }
 
 }
