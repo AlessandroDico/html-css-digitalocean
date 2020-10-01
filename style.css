@@ -522,42 +522,33 @@ h2.prefooter-title {
 /* ______inizio footer_________ */
 
 footer {
-    height: 800px;
     background-color: #010e28;
     padding: 60px 0;
 }
 
-.footer-all-lists-container {
-    /* padding: 0 30px; sotto     */
+.footer-all-list-container {
+    border-bottom: 1px solid #ffffff80;
 }
 
 .footer-single-ul-container {
     float: left;
-    width: 20%;  /*sotto **/
+    width: 100%;
+    margin-bottom:40px;
+    text-align: center;
 }
 
 span.footer-list-title {
     display: inline-block;
     color: #fff;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 ul.footer-ul > li > a {
     display: inline-block;
     color: #ffffff80;
-    padding: 10px 0;
+    padding: 8px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -603,6 +594,17 @@ ul.footer-ul > li > a {
 
     .deploy-and-scale-bottom-left > ul >li {
         float: left;
+    }
+
+    /* __________footer_________ */
+
+    .footer-single-ul-container {
+        width: 50%;
+        text-align: left;
+    }
+
+    .footer-all-list-container {
+        padding: 0 5% 30px 10%;
     }
 
 }
@@ -739,6 +741,14 @@ ul.footer-ul > li > a {
     .prefooter-button {
         text-align: right;
     }
+
+    /* ________________footer____________ */
+
+    /* .footer-all-list-container {
+        padding: 0 50px 30px 50px;
+    } */
+
+
 
 }
 
@@ -898,6 +908,12 @@ ul.footer-ul > li > a {
     .col-xs-12.col-md-6:last-child .data-row,
     .col-xs-12.col-md-6:nth-last-child(2) .data-row  {
         border-color: transparent;
+    }
+
+    /* __________footer__________ */
+    
+    .footer-single-ul-container {
+        width: 20%;
     }
 
 }
