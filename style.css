@@ -550,9 +550,49 @@ ul.footer-ul > li > a {
     padding: 8px 0;
 }
 
+.footer-all-list-container > .footer-single-ul-container  a:hover {
+    text-decoration: none;
+    color: #fff;
+}
 
+/* ___foooter bottom___ */
 
+p.copyright-paragraph {
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 0 0 25px;
+    vertical-align: middle;
+    position: relative;
+}
 
+p.copyright-paragraph::before {
+    content: '\00a9';
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+}
+
+.footer-bottom-right img {
+    color: white;
+    margin: 0 10px;
+    filter: contrast(0%);
+    margin-top: 12px;
+}
+
+.footer-bottom-right > a:hover img {
+    text-decoration: none;
+    color: #fff;
+    filter: invert(1);
+}
+
+.footer-bottom-right a {
+    display: inline-block;
+}
 
 
 /* _____@@@@@@ inizio media @@@@@@_____ */
@@ -911,7 +951,7 @@ ul.footer-ul > li > a {
     }
 
     /* __________footer__________ */
-    
+
     .footer-single-ul-container {
         width: 20%;
     }
