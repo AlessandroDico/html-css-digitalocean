@@ -32,6 +32,15 @@ p {
     letter-spacing: 1px;
 }
 
+.deploy-and-scale-top,
+.designed-for-developers-paragraph, .designed-for-developers-title,
+.customers-title, .customers-paragraph,
+.love-digital-ocean-title, .love-digital-ocean-paragraph {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
 /* ______fine regole generiche_____ */
 
 .btn-primary {
@@ -377,12 +386,6 @@ p.description-paragraph {
     padding: 80px 0;
 }
 
-.customers-title, .customers-paragraph {
-    width: 90%;
-    margin: auto;
-    padding-bottom: 30px;
-}
-
 .customers-title h2 {
     letter-spacing: 1.5px;
 }
@@ -392,11 +395,15 @@ p.description-paragraph {
     line-height: 1.5;
 }
 
-.customers-paragraph > p > a {
+.customers-paragraph > p > a,
+p.love-digital-ocean-paragraph > a,
+.love-digital-ocean-carousel-paragraph > p > a {
     color: #0069ff;
 }
 
-.customers-paragraph > p > a:hover {
+.customers-paragraph > p > a:hover,
+p.love-digital-ocean-paragraph > a:hover,
+.love-digital-ocean-carousel-paragraph > p > a:hover {
     text-decoration: none;
     color: #1633ff;
 }
@@ -444,6 +451,64 @@ p.description-paragraph {
 .col-xs-12.col-md-6:last-child .data-row {
     border-color: transparent;
 }
+
+/* _______inizio sezione love digital ocean_____ */
+
+.love-digital-ocean {
+    padding: 60px 0;
+    background-color: #f3f5f9;
+}
+
+.love-digital-ocean-carousel-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.love-digital-ocean-carousel-img > img {
+    max-width: 80%
+}
+
+.love-digital-ocean-carousel-paragraph > p {
+    width: 80%;
+    margin: 30px auto;
+    font-size: 24px;
+    font-style: oblique;
+    font-family: none;
+}
+
+.love-digital-ocean-carousel-paragraph > p > a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.love-digital-ocean-small span,
+.love-digital-ocean-small small {
+    display: block;
+    color: #5b6987;
+}
+
+.love-digital-ocean-small span {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.love-digital-ocean-small small {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* _____@@@@@@ inizio media @@@@@@_____ */
@@ -496,6 +561,15 @@ p.description-paragraph {
 
     h2 {
         font-size: 36px;
+    }
+
+    .deploy-and-scale-top,
+    .designed-for-developers-paragraph, .designed-for-developers-title,
+    .customers-title, .customers-paragraph,
+    .love-digital-ocean-title, .love-digital-ocean-paragraph {
+        width: 75%;
+        margin: auto;
+        padding-bottom: 30px;
     }
 
     .navbar > .container-fluid .navbar-brand {
@@ -563,18 +637,45 @@ p.description-paragraph {
         cursor: pointer;
     }
 
-    /* ___inizio sezione customers___ */
-
-    .customers-title, .customers-paragraph {
-        width: 80%;
-    }
-
     /* test speed tabel sezione customers */
 
     .data-row {
         max-width: 100%;
     }
 
+    /* inizio sezione love digital ocean */
+
+    .love-digital-ocean-carousel-img > img {
+        max-width: 45%
+    }
+
+
+    /* ___freccie immagine carousel love digital ocean */
+    .love-digital-ocean-carousel-container::before {
+        content: '\f30a';
+        font-family: "font awesome 5 free";
+        font-weight: bold;
+        color: #031b4e;
+        font-size: 40px;
+        position: absolute;
+        bottom: 50%;
+        left: 2%;
+        transform: translateY(50%);
+        cursor: pointer;
+    }
+
+    .love-digital-ocean-carousel-container::after {
+        content: '\f30b';
+        font-family: "font awesome 5 free";
+        font-weight: bold;
+        color: #031b4e;
+        font-size: 40px;
+        position: absolute;
+        bottom: 50%;
+        right: 2%;
+        transform: translateY(50%);
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -727,11 +828,6 @@ p.description-paragraph {
         text-align: left;
     }
 
-    /* ___inizio sezione customers___ */
-
-    .customers-title, .customers-paragraph {
-        width: 70%;
-    }
 
     /* __________customers data "tabel"______ */
 
