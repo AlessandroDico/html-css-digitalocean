@@ -594,6 +594,11 @@ p.copyright-paragraph::before {
     display: inline-block;
 }
 
+.footer-bottom-right, .footer-bottom-left {
+    margin-bottom: 30px;
+}
+
+
 
 /* _____@@@@@@ inizio media @@@@@@_____ */
 
@@ -782,14 +787,6 @@ p.copyright-paragraph::before {
         text-align: right;
     }
 
-    /* ________________footer____________ */
-
-    /* .footer-all-list-container {
-        padding: 0 50px 30px 50px;
-    } */
-
-
-
 }
 
 @media screen and (min-width: 992px) {
@@ -954,6 +951,16 @@ p.copyright-paragraph::before {
 
     .footer-single-ul-container {
         width: 20%;
+    }
+
+    /* ________________footer bottom____________ */
+
+    .footer-bottom-right {
+        text-align: right;
+    }
+
+    .footer-bottom-left {
+        text-align: left;
     }
 
 }
