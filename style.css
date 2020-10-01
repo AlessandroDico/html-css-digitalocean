@@ -313,7 +313,7 @@ p.description-paragraph {
 }
 
 .designed-for-developers-image img {
-    max-width: 80%;
+    max-width: 95%;
 }
 
 .carousel-descriprion {
@@ -401,6 +401,45 @@ p.description-paragraph {
     color: #1633ff;
 }
 
+/* inizio test speed sezione cusromers */
+
+.data-row a {
+    font-size: 13px;
+    color: #00d7d2;
+    letter-spacing: 1.2px;
+}
+
+.data-row a::after {
+    content: '\f054';
+    font-family: "font awesome 5 free";
+    font-weight: bold;
+    vertical-align: middle;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+.data-row {
+    border-bottom: 1px solid #fff;
+    margin: 0 5px;
+    padding: 10px 0 10px 0;
+}
+
+/* :last-child.data-row {
+    border-bottom: 0;
+} */
+
+.customer-code, .customer-location {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+}
+
+.customer-location {
+    opacity: 0.6;
+}
+
+
 
 
 
@@ -485,6 +524,13 @@ p.description-paragraph {
     .deploy-and-scale-bottom-left > ul >li > a.current-section {
         border-bottom: 0;
         border-left: 2px solid #0069ff;
+    }
+
+
+    /* ______designed for developers_____ */
+
+    .designed-for-developers-image img {
+        max-width: 80%;
     }
 
     /* ___freccie immagine carousel designed for developers */
