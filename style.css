@@ -499,6 +499,25 @@ p.love-digital-ocean-paragraph > a:hover,
     font-size: 14px;
 }
 
+#quotation-paragraph::before {
+    content: '\f10d';
+    font-family: "font awesome 5 free";
+    font-size: 19px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #5b698778;
+}
+
+#a-read-story::before {
+    content: '\f10e';
+    font-family: "font awesome 5 free";
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: bold;
+    vertical-align: bottom;
+    color: #5b698778;
+}
+
 /* _________inizio preefooter________ */
 
 .prefooter {
