@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 h1 {
     font-size: 31px;
     font-weight: 600;
@@ -41,13 +42,14 @@ p {
     padding-bottom: 30px;
 }
 
-/* ______fine regole generiche_____ */
-
 .btn-primary {
     background-color: #006aff;
     color: #fff;
     border-color: #006aff;
 }
+
+/* ______-----fine regole generiche---_____ */
+
 
 /* ______prima navbar_____ */
 
@@ -85,7 +87,7 @@ p {
 
 .navbar-header {
     width: 100%;
-/* aggiunta per il toggle a larghezza fino 992*/
+/* aggiunta per il toggle a larghezza fino 992px*/
 }
 
 .navbar-toggle {
@@ -331,13 +333,13 @@ p.description-paragraph {
     padding-top: 30px;
 }
 
-.carousel-descriprion p {
+.carousel-descriprion > p {
     font-size: 16px;
     font-weight: 600;
     padding-bottom: 20px;
 }
 
-.scroll-point-container i {
+.scroll-point-container > i {
     font-size: 10px;
     color: #0069ff;
     padding: 0 5px;
@@ -386,11 +388,11 @@ p.description-paragraph {
     padding: 80px 0;
 }
 
-.customers-title h2 {
+.customers-title > h2 {
     letter-spacing: 1.5px;
 }
 
-.customers-title h2, .customers-paragraph p {
+.customers-title > h2, .customers-paragraph > p {
     color: #fff;
     line-height: 1.5;
 }
@@ -467,7 +469,7 @@ p.love-digital-ocean-paragraph > a:hover,
 }
 
 .love-digital-ocean-carousel-img > img {
-    max-width: 80%
+    max-width: 80%;
 }
 
 .love-digital-ocean-carousel-paragraph > p {
@@ -483,19 +485,19 @@ p.love-digital-ocean-paragraph > a:hover,
     font-weight: 600;
 }
 
-.love-digital-ocean-small span,
-.love-digital-ocean-small small {
+.love-digital-ocean-small > span,
+.love-digital-ocean-small > small {
     display: block;
     color: #5b6987;
 }
 
-.love-digital-ocean-small span {
+.love-digital-ocean-small > span {
     font-size: 16px;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-.love-digital-ocean-small small {
+.love-digital-ocean-small > small {
     font-size: 14px;
 }
 
@@ -598,9 +600,8 @@ p.copyright-paragraph::before {
 
 .footer-bottom-right img {
     color: white;
-    margin: 0 10px;
+    margin: 12px 10px 10px 10px;
     filter: contrast(0%);
-    margin-top: 12px;
 }
 
 .footer-bottom-right > a:hover img {
@@ -609,7 +610,7 @@ p.copyright-paragraph::before {
     filter: invert(1);
 }
 
-.footer-bottom-right a {
+.footer-bottom-right > a {
     display: inline-block;
 }
 
@@ -620,6 +621,9 @@ p.copyright-paragraph::before {
 
 
 /* _____@@@@@@ inizio media @@@@@@_____ */
+
+/* ______inizio media da 420px in su__________ */
+
 
 @media screen and (min-width: 420px) {
 
@@ -652,7 +656,7 @@ p.copyright-paragraph::before {
     }
 
     /*____inizio liste deploy-and-scale____ */
-    .deploy-and-scale-bottom-left ul {
+    .deploy-and-scale-bottom-left > ul {
         display: inline-block;
     }
 
@@ -673,7 +677,10 @@ p.copyright-paragraph::before {
 
 }
 
+/* ______inizio media da 768px in su__________ */
+
 @media screen and (min-width: 768px) {
+
     h1 {
         font-size: 58px;
     }
@@ -725,7 +732,7 @@ p.copyright-paragraph::before {
 
     /* ______designed for developers_____ */
 
-    .designed-for-developers-image img {
+    .designed-for-developers-image > img {
         max-width: 80%;
     }
 
@@ -765,7 +772,7 @@ p.copyright-paragraph::before {
     /* inizio sezione love digital ocean */
 
     .love-digital-ocean-carousel-img > img {
-        max-width: 45%
+        max-width: 45%;
     }
 
 
@@ -807,6 +814,9 @@ p.copyright-paragraph::before {
     }
 
 }
+
+/* ______inizio media da 992px in su__________ */
+
 
 @media screen and (min-width: 992px) {
 
@@ -851,11 +861,11 @@ p.copyright-paragraph::before {
         margin: 0;
     }
 
-    .first-navbar-right ul li {
+    .first-navbar-right > ul > li {
         margin-top: 5px;
     }
 
-    .first-navbar-right ul li a {
+    .first-navbar-right > ul > li > a {
         display: block;
         color: #5b6987;
         padding: 5px;
@@ -873,6 +883,7 @@ p.copyright-paragraph::before {
 
 /* _______fine prima navbar___ */
 /* ______inizio seconda navbar_____ */
+
     .navbar-default {
         margin-top: 40px;
     }
@@ -936,13 +947,15 @@ p.copyright-paragraph::before {
         text-decoration: none;
     }
 
-    .first-navbar-right ul li a:hover,
+    .first-navbar-right > ul > li > a:hover,
     .first-navbar-left small:hover,
     .first-navbar-left small:hover i,
     .navbar-default .navbar-nav > li > a:hover {
         text-decoration: none;
         color: #006aff;
     }
+
+    /* _____inizo sezione jumbo_____ */
 
     .jumbo {
         margin-top: 100px;
